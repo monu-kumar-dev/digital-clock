@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Clock</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Clock</title>
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-    <div class="container">
-        <div class="spanParent">
-            <span class="hour">10</span>
-            <span class="col">:</span>
-            <span class="min">05</span>
-            <span class="col">:</span>
-            <span class="sec">20</span>
-            <span class="am">AM</span>
-        </div>
-        <div class="text">
-            <p class="source">With free source Code</p>
-            <h2 class="digital">DIGITAL CLOCK</h2>
-            <h3 class="project-name">JAVASCRIPT PROJECT</h3>
-            <button class="format">Change 12Hour</button>
-        </div>
-    </div>
-    <script src="./script.js"></script>
-</body>
+  <div class="container">
 
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" aria-label="Toggle theme">
+      <span class="toggle-circle"></span>
+    </button>
+
+    <!-- AM / PM -->
+    <span class="am">AM</span>
+
+    <!-- Clock -->
+    <div class="spanParent">
+      <span class="hour">10</span>
+      <span class="col">:</span>
+      <span class="min">05</span>
+      <span class="col">:</span>
+      <span class="sec">20</span>
+    </div>
+
+    <!-- Text -->
+    <div class="text">
+      <p class="source">With free source Code</p>
+      <h2 class="digital">DIGITAL CLOCK</h2>
+      <h3 class="project-name">JAVASCRIPT PROJECT</h3>
+      <button class="format">Change 12Hour</button>
+    </div>
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
 </html>
