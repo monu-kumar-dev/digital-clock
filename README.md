@@ -91,5 +91,4 @@ BCA Student | Aspiring Frontend Developer
 ---
 
 ⭐ If you like this project, don’t forget to star the repository!
-## 📂 Project Structure
 
