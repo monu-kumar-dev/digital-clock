@@ -3,6 +3,8 @@ const minSpan = document.querySelector(".min");
 const secSpan = document.querySelector(".sec");
 const formatBtn = document.querySelector(".format");
 const ampmSpan = document.querySelector(".am");
+const themeToggle = document.querySelector(".theme-toggle");
+
 
 let is24Hour = true;
 
@@ -39,6 +41,11 @@ formatBtn.addEventListener("click", () => {
   is24Hour = !is24Hour;
   timer(); // instant update
 });
+
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+});
+
 
 timer();
 setInterval(timer, 1000);
