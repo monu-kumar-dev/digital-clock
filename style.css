@@ -4,20 +4,30 @@
   box-sizing: border-box;
 }
 
+/* BODY */
 body {
   font-family: "Times New Roman", Times, serif;
-  background: #7b78e6; /* soft purple */
-  color: #fff;
+  background: #7b78e6;
+  color: #ffffff;
+  transition: background-color 0.6s ease, color 0.6s ease;
 }
 
+/* DARK MODE BODY */
+body.dark {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+/* CONTAINER */
 .container {
   width: 60%;
   max-width: 800px;
   height: 400px;
   margin: 200px auto;
-  background: transparent;
+  text-align: center;
 }
 
+/* CLOCK */
 .spanParent {
   display: flex;
   justify-content: center;
@@ -25,6 +35,7 @@ body {
   margin-top: 60px;
 }
 
+/* TIME BOX */
 .hour,
 .min,
 .sec {
@@ -40,14 +51,25 @@ body {
   align-items: center;
 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
+/* DARK MODE TIME BOX */
+body.dark .hour,
+body.dark .min,
+body.dark .sec {
+  background-color: #1e293b;
+  color: #e5e7eb;
+}
+
+/* COLON */
 .col {
   font-size: 60px;
   margin: 0 12px;
   color: #f0f0f0;
 }
 
+/* TEXT */
 .text {
   display: flex;
   flex-direction: column;
@@ -72,13 +94,22 @@ body {
   color: #333;
   padding: 10px 24px;
   border-radius: 6px;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
+/* DARK MODE PROJECT NAME */
+body.dark .project-name {
+  background-color: #1e293b;
+  color: #e5e7eb;
+}
+
+/* AM PM */
 .am {
   font-size: 40px;
   margin-left: 10px;
 }
 
+/* FORMAT BUTTON */
 .format {
   margin-top: 20px;
   padding: 12px 28px;
@@ -93,22 +124,52 @@ body {
 
   cursor: pointer;
   transition: all 0.3s ease;
-
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Hover effect */
 .format:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
 }
 
-/* Click effect */
 .format:active {
   transform: scale(0.96);
 }
 
-/* Focus (keyboard users) */
-.format:focus {
-  outline: none;
+/* DARK MODE FORMAT BUTTON */
+body.dark .format {
+  background-color: #334155;
+  color: #e5e7eb;
+}
+
+/* THEME TOGGLE */
+.theme-toggle {
+  width: 64px;
+  height: 32px;
+  background-color: #f06292;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.4s ease;
+}
+
+/* Toggle Circle */
+.toggle-circle {
+  width: 26px;
+  height: 26px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  transition: transform 0.4s ease;
+}
+
+/* DARK MODE TOGGLE */
+body.dark .theme-toggle {
+  background-color: #6366f1;
+}
+
+body.dark .toggle-circle {
+  transform: translateX(30px);
 }
