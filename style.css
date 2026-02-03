@@ -9,7 +9,9 @@ body {
   font-family: "Times New Roman", Times, serif;
   background: #7b78e6;
   color: #ffffff;
-  transition: background-color 0.6s ease, color 0.6s ease;
+  transition:
+    background-color 0.6s ease,
+    color 0.6s ease;
 }
 
 /* DARK MODE BODY */
@@ -51,7 +53,9 @@ body.dark {
   align-items: center;
 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  transition: background-color 0.5s ease, color 0.5s ease;
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
 }
 
 /* DARK MODE TIME BOX */
@@ -94,7 +98,9 @@ body.dark .sec {
   color: #333;
   padding: 10px 24px;
   border-radius: 6px;
-  transition: background-color 0.5s ease, color 0.5s ease;
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
 }
 
 /* DARK MODE PROJECT NAME */
